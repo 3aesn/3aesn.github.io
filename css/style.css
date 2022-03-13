@@ -166,7 +166,37 @@ section img {
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
-    text-shadow: 5px 5px black;
+    text-shadow: 0px 0px black;
+    transition: all 0.3s ease 0s;
+    animation: zoomshadow 7s 20s 1;
+    -moz-animation: zoomshadow 7s 20s 1;
+    -webkit-animation: zoomshadow 7s 20s 1;
+    -o-animation: zoomshadow 7s 20s 1;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomshadow {
+    0% { text-shadow: 0px 0px black; }
+    50% { text-shadow: 5px 5px black; }
+    100% { text-shadow: 0px 0px black; }
+}
+
+@-moz-keyframes zoomshadow {
+    0% { text-shadow: 0px 0px black; }
+    50% { text-shadow: 5px 5px black; }
+    100% { text-shadow: 0px 0px black; }
+}
+
+@-webkit-keyframes zoomshadow {
+    0% { text-shadow: 0px 0px black; }
+    50% { text-shadow: 5px 5px black; }
+    100% { text-shadow: 0px 0px black; }
+}
+
+@-o-keyframes zoomshadow {
+    0% { text-shadow: 0px 0px black; }
+    50% { text-shadow: 5px 5px black; }
+    100% { text-shadow: 0px 0px black; }
 }
 
 .inner-divider-half {
